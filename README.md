@@ -20,7 +20,7 @@ Beware however, overcharging the weapon blows out the capacitors, and as such th
 </p>
 
 
-Capacitors, a wondeful component capable of rapidly storing and discharging electrical energy. These components are mandatory for anyone trying to get their hands on an Electromagical weaponry, they can be crafted, but require gold due to it's high electromagical conductivity.
+Capacitors, a wonderful component capable of rapidly storing and discharging electrical energy. These components are mandatory for anyone trying to get their hands on an Electromagical weaponry, they can be crafted, but require gold due to it's high electromagical conductivity.
 ## Credit
 I didn't act alone in making this mod! HUGE thanks and shoutout to DetVisor for letting me use their artwork! If you like the artwork for the railgun then go and check out their mod Spacer Arsenal, I used their Coil Lance artwork as the base for the railgun, and to be honest theirs is WAY better! Here's a link to their mod, go and support them NOW: https://steamcommunity.com/sharedfiles/filedetails/?id=3247891820
 
