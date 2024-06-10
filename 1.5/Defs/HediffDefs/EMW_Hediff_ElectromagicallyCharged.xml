@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<HediffDef>
+		<defName>EMW_ElectromagicallyCharged</defName>
+		<label>electromagically charged</label>
+		<description>The area in and around the victim has been electromagically charged, making spontaneous lightning strikes on their position incredibly likely</description>
+		<initialSeverity>1.0</initialSeverity>
+		<tendable>false</tendable>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<forceRemoveOnResurrection>true</forceRemoveOnResurrection>
+		<hediffClass>EMW_Railgun.Hediff_ElectromagicallyCharged</hediffClass>
+	</HediffDef>
+</Defs>

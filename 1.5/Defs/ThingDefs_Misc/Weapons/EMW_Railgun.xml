@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>EMW_RailgunRail</defName>
+		<label>railgun rail</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Railgun_Rail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>300</speed>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>EMW_EMPRailgunRail</defName>
+		<label>emp rail</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Railgun_Rail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>500</speed>
+			<explosionRadius>1.5</explosionRadius>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EMW_Railgun</defName>
+		<label>railgun</label>
+		<description>A Long range weapon which accelerates a projectile to incredible speeds using magnets. Can be overcharged to dump tremendous amounts of energy into the atmosphere surrounding the target, typically resulting in a lightning strike in the area, doing so burns out the capacitors.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Railgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeLance</soundInteract>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<Flammability>0</Flammability>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.4</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>1.0</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<Mass>8</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+				<li>Batteries</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>210</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Plasteel>200</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<EMW_Capacitor>3</EMW_Capacitor>
+		</costList>
+		<weaponTags>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>EMW_Railgun.Verb_DoubleShot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EMW_RailgunRail</defaultProjectile>
+				<beamMoteDef>EMW_EMPRailgunRail</beamMoteDef>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<beamChanceToAttachFire>1</beamChanceToAttachFire>
+				<warmupTime>6</warmupTime>
+				<range>9999</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<comps Inherit="False">
+			<li Class="CompProperties_EquippableAbilityReloadable">
+				<abilityDef>EMW_RailgunOvercharge</abilityDef>
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<chargeNoun>capacitor charge</chargeNoun>
+				<ammoDef>EMW_Capacitor</ammoDef>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+			</li>
+			
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<AbilityDef>
+		<defName>EMW_RailgunOvercharge</defName>
+		<label>overcharge</label>
+		<description>Intentionally overcharge the capacitors to cause lightning to strike an area.</description>
+		<iconPath>Things/Item/Resource/Capacitor</iconPath>
+		<aiCanUse>false</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		
+		<verbProperties>
+		
+			<verbClass>Verb_CastAbility</verbClass>
+			<requireLineOfSight>true</requireLineOfSight>
+			<range>9999</range>
+			<warmupTime>6</warmupTime>
+			<soundCast>ChargeLance_Fire</soundCast>
+			
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="EMW_Railgun.CompProperties_AbilityOvercharge"></li>
+		</comps>
+	</AbilityDef>
+</Defs>
