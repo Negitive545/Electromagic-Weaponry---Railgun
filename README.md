@@ -24,7 +24,7 @@ Capacitors, a wonderful component capable of rapidly storing and discharging ele
 ## Questions and Answers
 "Is this mod Combat Extended compatible?" | No, not as of yet. I am investigating the requirements for CE compatibility, but I haven't yet implemented anything.
 
-"Where can I download this mod?" | Here's the steam workshop link: WORKSHOP LINK NOT YET ADDED
+"Where can I download this mod?" | Here's the steam workshop link: https://steamcommunity.com/sharedfiles/filedetails/?id=3264874233
 
 "Is this mod balanced?" | 99% chance it isn't. I'm going to be working on it to hopefully make it balanced, but as it currently stands, no it's probably not balanced.
 
