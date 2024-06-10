@@ -21,3 +21,11 @@ Beware however, overcharging the weapon blows out the capacitors, and as such th
 
 
 Capacitors, a wondeful component capable of rapidly storing and discharging electrical energy. These components are mandatory for anyone trying to get their hands on an Electromagical weaponry, they can be crafted, but require gold due to it's high electromagical conductivity.
+## Credit
+I didn't act alone in making this mod! HUGE thanks and shoutout to DetVisor for letting me use their artwork! If you like the artwork for the railgun then go and check out their mod Spacer Arsenal, I used their Coil Lance artwork as the base for the railgun, and to be honest theirs is WAY better! Here's a link to their mod, go and support them NOW: https://steamcommunity.com/sharedfiles/filedetails/?id=3247891820
+
+Another shoutout to the RimWorld discord community, they proved to be an amazing resource in making this mod, and I couldn't have done it without them!
+
+This mod and it's contents, with the exception of the artwork used for the railgun, are distributed under Creative Commons Attribution 4.0 International, which allows anyone to use or modify this mod as long as it's contributors are credited.
+All rights and credit for the artwork utilized for the railgun belongs to DetVisor and any requests to utilize it should go through them and not me.
+RimWorld is owned and created by Ludeon Studios.
