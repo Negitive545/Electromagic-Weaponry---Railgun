@@ -27,5 +27,7 @@ I didn't act alone in making this mod! HUGE thanks and shoutout to DetVisor for 
 Another shoutout to the RimWorld discord community, they proved to be an amazing resource in making this mod, and I couldn't have done it without them!
 
 This mod and it's contents, with the exception of the artwork used for the railgun, are distributed under Creative Commons Attribution 4.0 International, which allows anyone to use or modify this mod as long as it's contributors are credited.
+
 All rights and credit for the artwork utilized for the railgun belongs to DetVisor and any requests to utilize it should go through them and not me.
+
 RimWorld is owned and created by Ludeon Studios.
